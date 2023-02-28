@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>News homepage | Frontend Mentor </title> 
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo__wrapper"><img src="./assets/images/logo.svg" alt=""></div>
+      <input type="checkbox" name="checkbox" id="checkbox">
+      <div class="nav-list__wrapper">
+        <ul class="nav-list">
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </div>
+      <label for="checkbox" class="checkbox__label" >
+        <button aria-controls="responsive-navbar-nav" aria-label="Toggle navigation" class="checkbox__icon"></button>
+      </label>
+      
+    </nav>
+  </header>
+  <main>
+    <div class="grid-container__main">
+      <picture  class="main-img__wrapper">
+        <source srcset="assets/images/image-web-3-mobile.jpg"
+                media="(max-width: 768px)" class="main-img">
+        <img src="assets/images/image-web-3-desktop.jpg" alt="" class="main-img">
+      </picture>
+      <div class="main-content"> 
+        <h1>  The Bright Future of Web 3.0?</h1>
+        <div>
+          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p> 
+          <button>Read More</button>
+        </div>
+      </div>
+      <div class="news__wrapper">
+        <h2>News</h2>
+        <div class="news">
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="news">
+          <h3>The Downsides of AI Artistry</h3>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <div class="news">
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container__highlights">
+      <div class="highlight">
+        <img src="assets/images/image-retro-pcs.jpg" alt="" class="highlight__img">
+        <div class="highlight__content">
+          <h2>01</h2>
+          <h3>Reviving Retro PCs</h3>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div> 
+      </div>
+      <div class="highlight">
+        <img src="assets/images/image-top-laptops.jpg" alt="" class="highlight__img">
+        <div class="highlight__content">
+          <h2>02</h2>
+          <h3>Top 10 Laptops of 2022</h3>
+          <p>Our best picks for various needs and budgets.</p>
+        </div> 
+      </div>
+      <div class="highlight">
+        <img src="assets/images/image-gaming-growth.jpg" alt="" class="highlight__img">
+        <div class="highlight__content">
+          <h2>03</h2>
+          <h3>The Growth of Gaming</h3>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+        </div> 
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let status = false;
+    let checkbox = document.querySelector('#checkbox');
+    document.querySelector('.checkbox__icon').addEventListener('click', (e)=>{
+      e.preventDefault();
+      status=!status;
+      checkbox.checked=status;
+    })
+    
+  </script>
+</body> 
+</html>
