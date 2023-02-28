@@ -115,10 +115,10 @@ nav{
         background-color: transparent;
         border: none;
     }
-    #checkbox:checked+.nav-list__wrapper{
+    #checkbox:checked~.nav-list__wrapper{
         visibility: visible;
     }
-    #checkbox:checked+.nav-list__wrapper>.nav-list{
+    #checkbox:checked~.nav-list__wrapper>.nav-list{
         width: 60%;
     }
     #checkbox:checked~.checkbox__label>.checkbox__icon{

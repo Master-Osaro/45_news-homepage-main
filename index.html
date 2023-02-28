@@ -13,7 +13,11 @@
   <header>
     <nav>
       <div class="logo__wrapper"><img src="./assets/images/logo.svg" alt=""></div>
+      
       <input type="checkbox" name="checkbox" id="checkbox">
+      <label for="checkbox" class="checkbox__label" >
+        <button aria-controls="responsive-navbar-nav" aria-label="Toggle navigation" class="checkbox__icon" aria-expanded="false"></button>
+      </label>
       <div class="nav-list__wrapper">
         <ul class="nav-list">
           <li>Home</li>
@@ -23,10 +27,6 @@
           <li>Categories</li>
         </ul>
       </div>
-      <label for="checkbox" class="checkbox__label" >
-        <button aria-controls="responsive-navbar-nav" aria-label="Toggle navigation" class="checkbox__icon"></button>
-      </label>
-      
     </nav>
   </header>
   <main>
@@ -90,10 +90,12 @@
   <script>
     let status = false;
     let checkbox = document.querySelector('#checkbox');
-    document.querySelector('.checkbox__icon').addEventListener('click', (e)=>{
+    let checkboxBtn = document.querySelector('.checkbox__icon');
+    checkboxBtn.addEventListener('click', (e)=>{
       e.preventDefault();
       status=!status;
       checkbox.checked=status;
+      checkboxBtn.setAttribute("aria-expanded", status);
     })
     
   </script>
