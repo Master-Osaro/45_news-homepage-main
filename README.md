@@ -32,7 +32,6 @@ Users should be able to:
 ### Links
 
 - Live Site URL: [Live Demo](https://news-homepage-o)
-- [JS Intersection Observer API:]()
 
 ## My process
 
