@@ -49,10 +49,12 @@ nav{
     gap: 1rem;
 }
 
-.nav-list li{
+.nav-list li a{
     transition: all .3s;
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
 }
-.nav-list li:hover{
+.nav-list li a:hover{
     color: var(--Soft-red);
     cursor: pointer;
 }
@@ -267,12 +269,13 @@ main{
     flex-direction: column;
     gap: 0.45rem;
 }
-.highlight__content h3{
+.highlight__content h3 a{
     color: var(--Very-dark-blue);
     transition: all .3s;
     cursor: pointer;
+    text-decoration: none;
 }
-.highlight__content h3:hover{
+.highlight__content h3 a:hover{
     color: var(--Soft-red);
 }
 .highlight__img{
