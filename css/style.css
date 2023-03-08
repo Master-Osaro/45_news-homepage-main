@@ -281,3 +281,21 @@ main{
 .highlight__img{
     max-height: 100px;
 }
+
+/* Experimenting with JS Intersection Observer */
+.obs-wrapper {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.9s;
+}
+
+.obs-wrapper--img {
+    opacity: 0;
+    transition: all 0.9s;
+}
+.obs-wrapper.appear {
+    opacity: 1;
+}
+.obs-wrapper.slide-down {
+    transform: translateY(0);
+}
