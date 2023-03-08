@@ -70,6 +70,7 @@ nav{
         visibility: hidden;
         display: flex;
         justify-content: flex-end;
+        z-index: 2;
     }
     .nav-list{
         flex-direction: column;
@@ -147,6 +148,7 @@ main{
     .grid-container__main{
         display:flex;
         flex-direction: column;
+        position: relative;
     }
 }
 
