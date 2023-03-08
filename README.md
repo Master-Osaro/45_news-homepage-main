@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live Demo](#)
+- Live Site URL: [Live Demo](https://news-homepage-o)
 
 ## My process
 
@@ -39,7 +39,6 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- React.js
 
 
 ### What I Learned
